@@ -15,28 +15,20 @@ The server:
 ```bash
 node server.js
 Then open:
-
-arduino
-Copy code
 http://localhost:4000
 Folder Structure
-pgsql
-Copy code
+
 practicing-node/
 │
 ├── public/
 │   └── index.html
-│
-├── server.js
+│   └── style.css
+│   └── script.js
+├── index.js
 └── .gitignore
 Features
 Serves static HTML files
-
 Handles different routes
 
 Uses Node core modules (http, fs, path)
-
-markdown
-Copy code
-
 ---
