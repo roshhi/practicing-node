@@ -11,6 +11,22 @@ const server = http.createServer((req,res)=>{
       "public",
       req.url === "/" ? "index.html" : req.url
     );
+    if(req.url === '/api/users'){
+        const users = [
+            {
+                name: "Bob",
+                age: 40
+            },
+            {
+                name: "roshaan",
+                age: 21
+            },
+        ]
+
+        res.writeHead(200, { "Content-Type": "application/json" });
+        res.end(JSON.stringify(users));
+
+    }
 
     const extname = path.extname(filePath);
     console.log(extname);
@@ -58,7 +74,6 @@ const server = http.createServer((req,res)=>{
         res.end(content);
         }
     });
-
 });
 
 const PORT = process.env.PORT || 4000;
