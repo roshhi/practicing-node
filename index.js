@@ -22,7 +22,6 @@ const server = http.createServer((req,res)=>{
                 age: 21
             },
         ]
-
         res.writeHead(200, { "Content-Type": "application/json" });
         res.end(JSON.stringify(users));
 
