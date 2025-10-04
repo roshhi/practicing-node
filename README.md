@@ -13,7 +13,7 @@ The server:
 ## How to Run
 
 ```bash
-node server.js
+node index.js
 Then open:
 http://localhost:4000
 Folder Structure
